@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- head -->
+
 <head>
+    <!-- meta data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- sytle -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- title -->
     <title>BMI Calculator</title>
 </head>
 
+<!-- body -->
+
 <body>
+    <!-- main div wrapper -->
+    <div class="wrapper">
 
+        <h3 id='info'>Enter height(cm) and weight(kg)</h3>
+        <p class="input">Height</p>
+        <input type="number" onfocus="this.value =''" id="height">
+        <p class="input">Weight</p>
+        <input type="number" onfocus="this.value =''" id="weight">
 
+        <!-- loader image -->
+        <div class="loader">
+            <img src="loader.gif" alt="">
+        </div>
+        <p id='output'></p>
+        <p id='state'></p>
+
+        <!-- create 2 buttons; calculate and clear -->
+        <button id="btn" class="calculate">Calculate</button>
+        <button id="btn" class="clear">Clear</button>
+
+        <!-- footer -->
+        <footer class="footer">
+            &copy; Designed by
+            <a href="https://github.com/preciousimo">Precious Imoniakemu</a>
+        </footer>
+
+    </div>
+
+    <!-- script file -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
